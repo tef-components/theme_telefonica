@@ -1,11 +1,11 @@
 {
-  "name": "theme-telefonica",
+  "name": "theme_telefonica",
   "version": "0.2.2",
-  "homepage": "https://github.com/tef-components/theme-telefonica",
+  "homepage": "https://github.com/tef-components/theme_telefonica",
   "authors": [
     "the TEF components team"
   ],
-  "description": "TEF components - theme-telefonica",
+  "description": "TEF components - theme_telefonica",
   "main": "index.html",
   "license": "MIT",
   "ignore": [
