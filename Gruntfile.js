@@ -8,7 +8,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          'css/telefonica.components.css': 'less/theme.less',
+          'css/components.telefonica.css': 'less/theme.less',
           'css/components/buttons.css': 'less/buttons.less',
           'css/components/button-groups.css': 'less/button-groups.less',
           'css/components/dropdowns.css': 'less/dropdowns.less',
@@ -30,9 +30,9 @@ module.exports = function(grunt) {
       default: {
        src: [
           '../icons/icons.css',
-          'css/telefonica.components.css',
+          'css/components.telefonica.css',
         ],
-        dest: 'css/telefonica.components.css'
+        dest: 'css/components.telefonica.css'
       }
     },
 
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'css/telefonica.components.min.css': 'css/telefonica.components.css',
+          'css/components.telefonica.min.css': 'css/components.telefonica.css',
           'css/components/buttons.min.css': 'css/components/buttons.css',
           'css/components/button-groups.min.css': 'css/components/button-groups.css',
           'css/components/dropdowns.min.css': 'css/components/dropdowns.css',
