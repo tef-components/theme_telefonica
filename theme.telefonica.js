@@ -189,6 +189,9 @@ var setVars = function(){
   CoreStyle.g.headerIcon =
     "#b6c6cb";
 
+  CoreStyle.g.headerReverse =
+    "#003245";
+
   CoreStyle.g.shadow =
     "0 2px 6px rgba(0, 0, 0, 0.3)";
 
@@ -202,25 +205,19 @@ var setVars = function(){
     "992px";
 
   CoreStyle.g.widthLG =
-    "1200px";
-
-  CoreStyle.g.widthXL =
-    "1400px";
+    "1167px";
 
   CoreStyle.g.widthMin =
     "320px";
 
   CoreStyle.g.widthMaxSM =
-    "728px";
+    "768px";
 
   CoreStyle.g.widthMaxMD =
     "952px";
 
   CoreStyle.g.widthMaxLG =
-    "1160px";
-
-  CoreStyle.g.widthMaxXL =
-    "1360px";
+    "1127px";
 
   CoreStyle.g.gutter =
     "1.6%";

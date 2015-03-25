@@ -1,13 +1,54 @@
+.tef-header {
+  position: relative;
+  height: 138px;
+  background: url(../images/bg.jpg) left bottom no-repeat;
+}
+.tef-header h1 {
+  display: none;
+  position: absolute;
+  bottom: 22px;
+  right: 32px;
+  color: #fff;
+  height: 34px;
+  width: 200px;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 300;
+}
+@media only screen and (min-width: 480px) {
+  .tef-header h1 {
+    display: block;
+  }
+}
+.tef-header h1 a {
+  color: white;
+  text-decoration: none;
+}
+.tef-header h2 {
+  position: absolute;
+  bottom: 26px;
+  left: 24px;
+  background: url(../images/logo.png) no-repeat;
+  height: 34px;
+  width: 200px;
+  margin: 0;
+  font-size: 0;
+}
 .tef-header nav {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   height: 32px;
-  padding: 0 32px 0 56px;
+  padding: 0 32px;
   background: #003245;
   color: white;
   z-index: 98;
+}
+@media only screen and (min-width: 480px) {
+  .tef-header nav {
+    position: relative;
+  }
 }
 .tef-header ul {
   display: none;
@@ -20,6 +61,15 @@
   padding: 0;
   margin: 0;
 }
+@media only screen and (min-width: 992px) {
+  .tef-header ul {
+    display: block;
+    background: transparent;
+    top: 0;
+    right: 22px;
+    box-shadow: none;
+  }
+}
 .tef-header ul.show {
   display: block;
 }
@@ -31,20 +81,40 @@
   border-bottom: 1px solid #f2f2f2;
   text-align: right;
 }
+@media only screen and (min-width: 992px) {
+  .tef-header li {
+    display: inline-block;
+    color: white;
+    border: none;
+    line-height: 32px;
+    padding: 0 10px;
+  }
+}
+.tef-header li span {
+  position: relative;
+  top: -2px;
+}
 .tef-header li a {
   color: #003245;
   text-decoration: none;
 }
+@media only screen and (min-width: 992px) {
+  .tef-header li a {
+    color: white;
+  }
+}
+.tef-header li a:hover span,
+.tef-header li a:focus span,
+.tef-header li a:active span {
+  text-decoration: underline;
+}
 .tef-header li [data-icon] {
-  position: relative;
-  top: 2px;
   color: #b6c6cb;
   padding-left: 4px;
   font-size: 16px;
 }
 .tef-header .tef-close,
 .tef-header .tef-menu {
-  display: none;
   position: absolute;
   top: 0;
   right: 32px;
@@ -61,13 +131,30 @@
 .tef-header .tef-menu.show {
   display: block;
 }
+@media only screen and (min-width: 992px) {
+  .tef-header .tef-close.show,
+  .tef-header .tef-menu.show {
+    display: none;
+  }
+}
+.tef-header .tef-close:hover,
+.tef-header .tef-menu:hover,
+.tef-header .tef-close:focus,
+.tef-header .tef-menu:focus,
+.tef-header .tef-close:active,
+.tef-header .tef-menu:active {
+  background: white;
+  color: #003245;
+}
+.tef-header .tef-close {
+  display: none;
+}
 .tef-header .tef-menu {
   background: #003245;
   color: white;
 }
-.tef-header .tef-menu:hover,
-.tef-header .tef-menu:focus,
-.tef-header .tef-menu:active {
-  background: white;
-  color: #003245;
+@media only screen and (min-width: 992px) {
+  .tef-header .tef-menu {
+    display: none;
+  }
 }
