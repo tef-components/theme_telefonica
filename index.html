@@ -24,22 +24,28 @@
         <h2>Telefonica</h2>
       </header>
 
-      <div data-columns="4" data-columns-md="3" data-columns-sm="1">
-        <div data-columns="1" data-columns-sm="0" class="tef-sidebar">
-          <nav>
-            <ul class="tef-tabs" data-columns="3">
-              <li><i data-icon="user"></i></li>
-              <li class="active"><i data-icon="search"></i></li>
-              <li><i data-icon="help_circle"></i></li>
-            </ul>
-             <ul class="tef-list">
+      <div data-columns="4" data-columns-md="3" data-columns-sm="1" class="tef-relative">
+        <nav class="tef-sidebar" data-columns-sm="0">
+          <ul class="tef-tabs" data-columns="3">
+            <li><i data-icon="user"></i></li>
+            <li class="active"><i data-icon="search"></i></li>
+            <li><i data-icon="help_circle"></i></li>
+          </ul>
+          <ul class="tef-toolbar">
+            <li><i data-icon="user"></i></li>
+            <li>Edit</li>
+            <li class="active"><i data-icon="search"></i></li>
+            <li><i data-icon="help_circle"></i></li>
+          </ul>
+          <div class="tef-list">
+            <ul>
               <li>
                 <input type="text" class="tef-input icon small block">
                 <i data-icon="search"></i>
               </li>
             </ul>
             <header>Group 1</header>
-            <ul class="tef-list">
+            <ul>
               <li><a href="">List item 1</a></li>
               <li><a href="">List item 2</a></li>
               <li><a href="">List item 3</a></li>
@@ -48,7 +54,7 @@
               <li><a href="">List item 6</a></li>
             </ul>
             <header>Group 2</header>
-            <ul class="tef-list">
+            <ul>
               <li><a href="">List item 1</a></li>
               <li><a href="">List item 2</a></li>
               <li><a href="">List item 3</a></li>
@@ -56,15 +62,9 @@
               <li><a href="">List item 5</a></li>
               <li><a href="">List item 6</a></li>
             </ul>
-            <ul class="tef-toolbar">
-              <li><i data-icon="user"></i></li>
-              <li>Edit</li>
-              <li class="active"><i data-icon="search"></i></li>
-              <li><i data-icon="help_circle"></i></li>
-            </ul>
-          </nav>
-        </div>
-        <section class="tef-content" data-column-span="3" data-column-span-md="2" data-column-span-sm="1">
+          </div>
+        </nav>
+        <section class="tef-content" data-column-offset="1" data-column-offset-md="1" data-column-offset-sm="0" data-column-span="3" data-column-span-md="2" data-column-span-sm="1">
           <h2>Forms</h1>
           <p>This page shows basic form elements.</p>
           <article data-columns="2" data-columns-sm="1" class="tef-gutter">
