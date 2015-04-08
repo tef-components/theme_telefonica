@@ -38,10 +38,17 @@ module.exports = function(grunt) {
     concat: {
       default: {
        src: [
-          '../icons/icons.css',
+          '../icons/fonts/icons.css',
           'css/components.telefonica.css',
         ],
         dest: 'css/components.telefonica.css'
+      }
+    },
+    
+    copy: {
+      eot: {
+        src: '../icons/fonts/icons.eot',
+        dest: 'css/icons.eot',
       }
     },
 
@@ -217,6 +224,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('release', [
+    'copy',
     'replace:preless',
     'replace:import',
     'less',
