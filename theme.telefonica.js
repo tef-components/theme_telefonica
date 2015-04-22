@@ -168,6 +168,12 @@ var setVars = function(){
   CoreStyle.g.headerReverse =
     "#003245";
 
+  CoreStyle.g.headerBg =
+    "url('../theme_telefonica/images/bg.jpg')";
+
+  CoreStyle.g.headerLogo =
+    "url('../theme_telefonica/images/logo.png')";
+
   CoreStyle.g.shadow =
     "0 2px 6px rgba(0, 0, 0, 0.3)";
 
